@@ -3,75 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I'm Sorry</title>
+  <title>For You ❤️</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      color: #fff;
       text-align: center;
-      color: #333;
     }
 
-    .container {
-      background: white;
+    .card {
+      background: rgba(0, 0, 0, 0.4);
       padding: 30px;
       border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-      max-width: 400px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      max-width: 420px;
+      backdrop-filter: blur(10px);
     }
 
     h1 {
-      color: #ff4b5c;
+      font-size: 28px;
+      margin-bottom: 10px;
     }
 
     p {
       font-size: 18px;
-      margin: 15px 0;
+      line-height: 1.5;
     }
 
     button {
+      margin-top: 20px;
       padding: 10px 20px;
       border: none;
       border-radius: 25px;
-      background: #ff4b5c;
-      color: white;
+      background: #fff;
+      color: #ff4b5c;
       font-size: 16px;
       cursor: pointer;
     }
 
     button:hover {
-      background: #ff1e3c;
+      background: #ffe3e8;
     }
 
     .hidden {
       display: none;
       margin-top: 15px;
-      color: green;
+      font-size: 20px;
+      color: #ffeb3b;
       font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>I'm Really Sorry 😔</h1>
-    <p>Hey my friend,</p>
-    <p>I didn't mean to hurt you. You mean a lot to me and I truly regret what I did.</p>
-    <p>Please forgive me ❤️</p>
+  <div class="card">
+    <h1>I Love You ❤️</h1>
+    <p>Hey my love,</p>
+    <p>You are the most beautiful person I have ever seen, not just outside but from your heart.</p>
+    <p>Your smile makes my day brighter, your eyes shine like stars, and your presence makes everything feel perfect.</p>
+    <p>I’m really lucky to have you in my life 💖</p>
 
-    <button onclick="showMessage()">Forgive Me?</button>
-    <p id="reply" class="hidden">Thank you for forgiving me! 😊</p>
+    <button onclick="showLove()">Tap here ❤️</button>
+    <p id="loveMsg" class="hidden">Forever yours 💍❤️</p>
   </div>
 
   <script>
-    function showMessage() {
-      document.getElementById("reply").style.display = "block";
+    function showLove() {
+      document.getElementById("loveMsg").style.display = "block";
     }
   </script>
 
